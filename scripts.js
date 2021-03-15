@@ -1,12 +1,12 @@
 window.onload = () => {
   const buttons = document.querySelector(".buttons");
-  buttons.onclick = justDoIt;
+  buttons.onclick = runExercices;
   
   const results = document.querySelector(".results")
 
   results.textContent = "";
 
-  function justDoIt(e) {
+  function runExercices(e) {
     results.innerHTML = (
       e.target.id === "1" ?
       exercise_1() :
